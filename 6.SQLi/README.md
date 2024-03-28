@@ -75,28 +75,16 @@ Register a new user and login
 
 <img src="images/mainpage.png" width="800" />
 
-### Step3: SQL Injection Labs
+### Step3: SQL Injection Practice
 
 * In the left-hand menu, click on **(A1) Injection -> SQL Injection (intro)**.
 
     <img src="images/A1-intro.png" width="600" />
 
-    You can start attempting these labs by completing each of the stages.
+    You can start attempting these labs by completing few of the stages.
 
-* If you finish all the stages successfully in a lab, it will look like this below
-
-    <img src="images/A1-intro-done.png" width="600" />
-
-* You will get 100 if you finish some stages in `SQL Injection (intro)`
-
-* If you want to get extra points, attempt these:
-    * SQL Injection (advanced)
-    * SQL Injection (mitigation)
-    * Path traversal
-
-    You will get 30 to 100 extra points. If you finish one, you get 30 extra points. If you finish two, you get 60 extra points. If you finish three, you get 100 extra points. **Important** these labs are challenging so be aware not to spend too much time on this. It is up to you! 
+* You will get full points if you finish some of the stages in `SQL Injection (intro)`
 
 ## Submission
 
-1. Do your best and complete any number of stages in `SQL Injection (intro)`, take a screenshot `yourPID_Lab_6.png` and submit it to Canvas `Lab 6 assignment -> proof`
-2. For extra points, package your solutions into a `yourPID_Lab_6.zip` file and upload it to Canvas `Lab 6 assignment -> extras` 
+Do your best and complete any number of stages in `SQL Injection (intro)`, take a screenshot `yourPID.png` and submit it to Canvas `Homework 5`
