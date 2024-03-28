@@ -1,9 +1,7 @@
 ## Objective
 Understand SQL Injection and how to prevent it.
 
-## Lab 6
-
-For this lab, you will need to be able to edit form fields before submitting them.
+For this practice, you will need to be able to edit form fields before submitting them.
 This is a basic and common technique that attackers use to test websites for vulnerabilities.
 
 We will use the [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html) for this lab. 
