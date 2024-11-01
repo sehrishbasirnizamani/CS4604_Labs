@@ -87,4 +87,4 @@ Register a new user and login
 
 ## Submission
 
-Do your best and complete any number of stages in `SQL Injection (intro)`, take a screenshot `yourPID.png` and submit it to Canvas `Homework 5`
+Do your best and complete any number of stages in `SQL Injection (intro)`, take a screenshot `yourPID.png` and submit it to Canvas `Homework 6`
