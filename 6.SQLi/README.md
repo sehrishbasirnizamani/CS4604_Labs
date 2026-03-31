@@ -13,19 +13,25 @@ This program is a demonstration of common server-side application flaws. The exe
 
 <span style="color:red">**WARNING:exclamation:**</span> While running this program your machine will be extremely vulnerable to attack.
 
-So <span style="color:red">**DO NOT**</span> run it using your machine, run it on [Docker Playground](http://play-with-docker.com) instead.
+So <span style="color:red">**DO NOT**</span> run it using your machine, run it on [KillerCoda](https://killercoda.com/playgrounds/scenario/ubuntu) instead.
 
-Go to the [Docker Playground](http://play-with-docker.com) and select `Login`
+Go to [KillerCoda](https://killercoda.com/playgrounds/scenario/ubuntu), 
+<b>Note:</b> The maximum duration for each session is 60 minutes.
 
-<img src="images/docker_playground.png" width="500" />
+<img src="images/killercoda.png" width="500" />
 
-### Step1: Create a new instance
+### Step1: Check your docker version
+Access the Killercoda Ubuntu Playground:
 
-In the left-hand menu, click on `ADD NEW INSTANCE`. This will start a Docker instance (node) and log you in as the root user.
+👉 https://killercoda.com/playgrounds/scenarios/ubuntu
 
-<img src="images/start_instance.png" width="200" /> <br/>
+Once the terminal is ready, verify that Docker is running:
+```bash
+docker version
+```
+<img src="images/docker_version.png" width="200" /> <br/>
 
-<img src="images/instance_created.png" width="500" />
+
 
 ### Step2: Start WebGoat
 Run this command 
@@ -34,40 +40,32 @@ docker run -p 8080:8080 -p 9090:9090 webgoat/goatandwolf
 ```
 
 You should see a bunch of output that ends in something like this:
-```
-2021-03-01 03:25:34.129  INFO 27 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-03-01 03:25:34.353  INFO 27 --- [           main] io.undertow                              : starting server: Undertow - 2.0.28.Final
-2021-03-01 03:25:34.394  INFO 27 --- [           main] org.xnio                                 : XNIO version 3.3.8.Final
-2021-03-01 03:25:34.444  INFO 27 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2021-03-01 03:25:35.064  INFO 27 --- [           main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path '/WebGoat'
-2021-03-01 03:25:35.068  INFO 27 --- [           main] org.owasp.webgoat.StartWebGoat           : Started StartWebGoat in 42.104 seconds (JVM running for 43.618)
-```
+<br/>
+<img src="images/run1.png" width="500" /> <br/>
+<img src="images/run2.png" width="500" /> <br/>
 <b>Note:</b> There might be some 'warnings' at the end. No need to be worried if you see/don't see the warnings. 
 
-You should also see the `IP` and `OPEN PORT` `8080` information on the top.
 
-<img src="images/WebGoat.png" width="500" />
+To access the web interface, follow these steps: - Click the **menu icon (☰)** in the top-right corner - Select **"Traffic / Ports"** - Click on port **8080** (or manually enter it under Custom Ports)
+<br/>
+<img src="images/openport.png" width="500" /> <br/>
+<img src="images/open8080.png" width="500" /> <br/>
+
+
 
 That 8080 is a link, click on it. This should take you to a URL that looks something like:
 
-http://ip172-18-0-38-c0u5msre75e000b69990-8080.direct.labs.play-with-docker.com
+https://cb5c962196fb-10-244-7-104-8080.saci.r.killercoda.com/
 
-**Your exact URL will be different.**
-
-<b>Note:</b> If you didn't see `8080` next to `OPEN PORT` on the top. like below, then click `OPEN PORT` and enter `8080`
-
-<img src="images/no8080.png" width="500" />
-
-<img src="images/enter8080.png" width="500" />
 
 
 You **should get an error** on this page. In your browser's address bar, append **/WebGoat/** to the end of the URL and hit enter.
 
-For example: http://ip172-18-0-12-c17317pbqvp00094kt20-8080.direct.labs.play-with-docker.com/WebGoat/
+For example: https://cb5c962196fb-10-244-7-104-8080.saci.r.killercoda.com/WebGoat
 
 You should now see something like this:
 
-<img src="images/WebGoat_login.png" width="400" />
+<img src="images/openwebgoat.png" width="400" />
 
 Register a new user and login
 
