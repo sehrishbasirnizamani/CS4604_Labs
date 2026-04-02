@@ -5,7 +5,6 @@ For this practice, you will need to be able to edit form fields before submittin
 This is a basic and common technique that attackers use to test websites for vulnerabilities.
 
 We will use the [Chrome Browser](https://www.google.com/chrome/browser/desktop/index.html) for this lab. 
-If you don't want to use Chrome, there are many alternatives. [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) is an excellent choice. But setup and configuration of Zap (or other alternatives) are beyond the scope of this lab.
 
 [WebGoat](https://owasp.org/www-project-webgoat/) is a deliberately insecure web application maintained by [OWASP](http://www.owasp.org/) designed to teach web application security lessons.
 
